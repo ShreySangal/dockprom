@@ -121,10 +121,11 @@ services:
     image: stefanprodan/caddy
     container_name: caddy
     ports:
-      - "3000:3000"
-      - "9090:9090"
-      - "9093:9093"
-      - "9091:9091"
+      - "7000:3000"
+      - "7090:9090"
+      - "7093:9093"
+      - "7091:9091"
+      - "7081:8080"
     volumes:
       - ./caddy/:/etc/caddy/
     environment:
